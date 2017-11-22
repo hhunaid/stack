@@ -48,7 +48,7 @@ Stack * addStacks(Stack *first, Stack * second) {
     }
     while (!second->isEmpty()) {
         int num, unit;
-        first->pop(num);
+        second->pop(num);
         add(num, 0, unit, carry);
         resultStack->push(unit);
     }
